@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--This is a simple survey to record my daily health status i.e. food/water intake, exercise duration, and sleep duration-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Health Survey</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Daily Health Survey</h1>
+  <form>
+    <div class="each-question">
+      <label for="sleep">How much sleep did you get yesterday?</label>
+      <select id="sleep">
+        <option value="" disabled selected>Select the number of hours</option>
+        <option value="1">Less than 4</option>
+        <option value="2">5</option>
+        <option value="3">6</option>
+        <option value="4">7</option>
+        <option value="5">8</option>
+        <option value="6">More than 8</option>
+      </select>
+    </div>
+
+    <div class="each-question">
+      <label for="breakfast">What did you have for breakfast?</label>
+      <input id="breakfast" type="text" placeholder="Enter here">
+    </div>
+
+    <div class="each-question">
+      <label for="lunch">What did you have for lunch?</label>
+      <input id="lunch" type="text" placeholder="Enter here">
+    </div>
+    
+    <div class="each-question">
+      <label for="dinner">What did you have for dinner?</label>
+      <input id="dinner" type="text" placeholder="Enter here">
+    </div>
+
+    <div class="each-question">
+      <label>Select one (or more) snack(s) that you had today.</label>
+      <div class="each-checkbox">
+        <input name="snack" id="none" type="checkbox">
+        <label for="none">None</label>
+      </div>
+      <div class="each-checkbox">
+        <input name="snack" id="chocolate" type="checkbox">
+        <label for="chocolate">Chocolate</label>
+      </div>
+      <div class="each-checkbox">
+        <input name="snack" id="candy" type="checkbox">
+        <label for="candy">Candy</label>
+      </div>
+      <div class="each-checkbox">
+        <input name="snack" id="chips" type="checkbox">
+        <label for="chips">Chips</label>
+      </div>
+      <div class="each-checkbox">
+        <input name="snack" id="soda" type="checkbox">
+        <label for="soda">Soda</label>
+      </div>
+      <div class="each-checkbox">
+        <input name="snack" id="fruit" type="checkbox">
+        <label for="fruit">Fruit</label>
+      </div>
+      <div class="each-checkbox">
+        <input name="snack" id="other" type="checkbox">
+        <label for="other">Other</label>
+      </div>
+    </div>
+
+    <div class="each-question">
+      <label>How much water did you drink?</label>
+      <div class="each-checkbox">
+        <input name="water" id="less-than-1L" type="radio">
+        <label for="less-than-1L">Less than 1L</label>
+      </div>
+      <div class="each-checkbox">
+        <input name="water" id="1L" type="radio">
+        <label for="1L">1L</label>
+      </div>
+      <div class="each-checkbox">
+        <input name="water" id="2L" type="radio">
+        <label for="2L">2L</label>
+      </div>
+      <div class="each-checkbox">
+        <input name="water" id="more-than-2L" type="radio">
+        <label for="more-than-2L">More than 2L</label>
+      </div>
+    </div>
+
+    <div class="each-question">
+      <label for="exercise">How long did you exercise today?</label>
+      <select id="exercise">
+        <option value="" disabled selected>Select the time duration</option>
+        <option value="1">No exercise</option>
+        <option value="2">0 ~ 30 minutes</option>
+        <option value="3">30 minutes ~ 1 hour</option>
+        <option value="4">More than 1 hour</option>
+      </select>
+    </div>
+
+    <div class="each-question">
+      <label for="details">Describe the exercises you did in more detail.</label>
+      <textarea id="details" cols="30" rows="10"></textarea>
+    </div>
+
+    <div id="submit">
+      <button>Submit</button>
+    </div>
+  </form>
+
+  <p>See you tomorrow!</p>
+
+</body>
+</html>

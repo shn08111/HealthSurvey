@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* This resets all the css rules already applied in the browser*/
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: black;
+  padding: 10px 200px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 3px;
+  padding: 5px;
+  background-color: turquoise;
+}
+
+form {
+  margin: 10px auto;
+  margin-bottom: 0px;
+  padding: 5px 40px;
+  background-color: lightblue;
+}
+
+.each-question {
+  margin: 5px;
+}
+
+input {
+  padding: 2px;
+  width: 50%;
+}
+
+.each-checkbox input {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+}
+
+#submit {
+  text-align: center;
+}
+
+button {
+  padding: 1px 10px;
+  background-color: orange;
+}
